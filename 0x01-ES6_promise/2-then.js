@@ -1,4 +1,4 @@
-/* Catch me if you can!*/
+/** Catch me if you can! */
 function handleResponseFromAPI(promise) {
   const body = { status: 200, body: 'success' };
 
