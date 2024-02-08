@@ -1,12 +1,10 @@
-// Implement a class named Airport
-
 export default class Airport {
-	constructor(name, code) {
-	  this._name = name;
-	  this._code = code;
-	}
+  constructor(name, code) {
+    this._name = name;
+    this._code = code;
   }
-  
-  Airport.prototype.toString = function airportToString() {
-	return `[object ${this._code}]`;
-  };
+
+  get [Symbol.toStringTag]() {
+    return `${this._code}`;
+  }
+}
